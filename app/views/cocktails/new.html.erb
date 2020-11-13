@@ -1,4 +1,12 @@
-<%= simple_form_for @restaurant do |f| %>
+<div class="main-container">
+<nav class="navbar fixed-top">
+  <%= link_to "HOME",cocktails_path, class: "text-style" %>
+  <%= link_to "ADD COCKTAIL",new_cocktail_path, class: "text-style" %>
+</nav>
+<div class="form-cont">
+  <%= simple_form_for (@cocktail), html: { class: "form-horizontal"} do |f| %>
   <%= f.input :name %>
-  <%= f.submit "Submit restaurant" %>
+  <%= f.submit %>
 <% end %>
+</div>
+</div>

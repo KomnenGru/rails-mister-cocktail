@@ -4,6 +4,8 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
   def show
+
+
   end
   def new
     @cocktail = Cocktail.new
@@ -26,3 +28,5 @@ class CocktailsController < ApplicationController
     params.require(:cocktail).permit(:name)
   end
 end
+
+

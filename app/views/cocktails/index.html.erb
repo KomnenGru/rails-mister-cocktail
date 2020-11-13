@@ -14,11 +14,16 @@
         <div class="card-category">
           <div class="cocktail_wrapper">
             <%= cocktail.name%>
+
           </div>
+
         </div>
+        <%= link_to "Delete", cocktail_path(cocktail), method: :delete, class: "fal fa-trash-alt"%>
       </div>
     </div>
     <% end %>
   <% end %>
 </div>
+
+
 
